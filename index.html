@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth or Dare Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Truth or Dare</h1>
+        <button id="startButton" onclick="startGame()">Random</button>
+        <button id="truthButton" onclick="showRandomTruth()">Truth</button>
+        <button id="dareButton" onclick="showRandomDare()">Dare</button>
+        <button id="restartButton" onclick="restartGame()" style="display: none;">Restart</button>
+        <div class="game-content" id="gameContent">
+            <div class="selection" id="selection"></div>
+            <div class="animation-container" id="animationContainer"></div>
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
